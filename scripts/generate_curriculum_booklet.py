@@ -465,7 +465,7 @@ def build_pdf(html_path: Path) -> Path:
             "--disable-gpu",
             f"--user-data-dir={profile}",
             "--allow-file-access-from-files",
-            "--print-to-pdf-no-header",
+            "--no-pdf-header-footer",
             f"--print-to-pdf={target}",
             html_path.as_uri(),
         ]

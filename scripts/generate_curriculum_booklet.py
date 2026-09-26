@@ -158,10 +158,10 @@ def build_html() -> Path:
       font-size: 11pt; line-height: 1.75; margin: 0;
     }}
     .cover {{
-      height: 255mm; page-break-after: always; display: flex; flex-direction: column;
+      height: 250mm; page-break-after: always; break-inside: avoid; display: flex; flex-direction: column;
       justify-content: space-between; text-align: center; padding: 8mm 0;
     }}
-    .cover h1 {{ color: {BLUE}; font-size: 29pt; line-height: 1.45; margin: 0; }}
+    .cover h1 {{ color: {BLUE}; font-size: 29pt; line-height: 1.45; margin: 0; page-break-before: auto; border: 0; padding: 0; }}
     .cover h2 {{ font-size: 17pt; color: {DARK}; margin: 2mm 0; }}
     .cover img {{ width: 100%; border-radius: 5mm; margin: 8mm 0; }}
     .grade-strip {{ display: flex; gap: 4mm; direction: rtl; }}

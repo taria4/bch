@@ -102,7 +102,7 @@ def create_visuals() -> None:
     draw.line((580, 480, 1020, 480), fill="#94A3B8", width=8)
     draw.line((620, 535, 980, 535), fill="#CBD5E1", width=8)
     draw.line((680, 590, 920, 590), fill="#CBD5E1", width=8)
-    text(draw, (800, 735), "تایپ / تصویر / جدول / صفحه‌آرایی", 34, DARK)
+    text(draw, (800, 735), "تایپ، تصویر، جدول و صفحه‌آرایی", 34, DARK)
     save_visual(image, "00-cover-illustration.png")
 
     # 1. Interface

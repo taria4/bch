@@ -1,0 +1,1084 @@
+<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8">
+<title>Microsoft Word پایه هفتم</title><style>
+    @font-face { font-family:NotoArabic; src:url('file:///usr/share/fonts/truetype/noto/NotoSansArabic-Regular.ttf'); font-weight:400; }
+    @font-face { font-family:NotoArabic; src:url('file:///usr/share/fonts/truetype/noto/NotoSansArabic-Bold.ttf'); font-weight:700; }
+    @page { size:A4; margin:17mm 16mm 18mm 19mm; }
+    * { box-sizing:border-box; }
+    body { direction:rtl; font-family:NotoArabic,sans-serif; color:#1F2937; font-size:11pt; line-height:1.75; margin:0; }
+    .cover { height:252mm; page-break-after:always; break-inside:avoid; display:flex; flex-direction:column; justify-content:space-between; text-align:center; padding:2mm 0; }
+    .cover-logo { width:38mm; max-height:38mm; object-fit:contain; margin:0 auto; }
+    .cover-hero { width:100%; max-height:115mm; object-fit:contain; border-radius:4mm; }
+    .cover h1 { color:#075985; font-size:29pt; line-height:1.4; margin:0; page-break-before:auto; border:0; padding:0; }
+    .cover h2 { color:#6B21A8; font-size:18pt; margin:1mm 0; }
+    .meta { border-top:2px solid #075985; padding-top:4mm; font-size:11pt; }
+    h1 { color:#075985; font-size:20pt; page-break-before:always; border-bottom:2px solid #075985; padding-bottom:3mm; margin-top:0; }
+    h2 { color:#6B21A8; font-size:14.5pt; break-after:avoid; margin-top:7mm; }
+    h3 { color:#166534; font-size:12.5pt; break-after:avoid; }
+    p { margin:2mm 0 3mm; }
+    ul,ol { margin:2mm 0 4mm; padding-right:7mm; }
+    li { margin-bottom:1mm; }
+    blockquote { border-right:4px solid #C2410C; background:#FFF7ED; margin:5mm 0; padding:4mm 5mm; border-radius:2mm; break-inside:avoid; }
+    table { width:100%; border-collapse:collapse; margin:5mm 0; font-size:9.3pt; }
+    thead { display:table-header-group; }
+    tr { break-inside:avoid; }
+    th { background:#075985; color:white; }
+    th,td { border:1px solid #CBD5E1; padding:2.2mm; text-align:right; vertical-align:top; }
+    tr:nth-child(even) td { background:#F8FAFC; }
+    img { max-width:100%; height:auto; display:block; margin:5mm auto 1mm; border-radius:2mm; break-inside:avoid; }
+    p:has(> img) { text-align:center; font-size:9pt; color:#64748B; break-inside:avoid; }
+    code { direction:ltr; unicode-bidi:embed; font-family:monospace; background:#F1F5F9; padding:0 1mm; }
+    strong { font-weight:700; }
+    hr { border:0; border-top:1px solid #CBD5E1; margin:7mm 0; }
+    </style></head><body>
+<section class="cover">
+  <img class="cover-logo" src="file:///workspace/assets/baqerololoum-logo.png" alt="لوگوی مجتمع آموزشی فرهنگی باقرالعلوم (ع)">
+  <div><h1>Microsoft Word ـ پایه هفتم</h1><h2>آموزش گام‌به‌گام واژه‌پردازی</h2></div>
+  <img class="cover-hero" src="file:///workspace/assets/word-grade7/00-cover-illustration.png" alt="نماد آموزش Word">
+  <div class="meta"><strong>مجتمع آموزشی فرهنگی باقرالعلوم (ع)</strong><br>
+  نویسنده: مهندس نقی زاده<br>نسخه آزمایشی ۱.۰ — سال تحصیلی ۱۴۰۵–۱۴۰۶</div>
+  <div>نام دانش‌آموز: .............................. &nbsp;&nbsp; کلاس: ...............</div>
+</section><h1>راهنمای استفاده از جزوه</h1>
+<p>این جزوه نخستین جلد اجرایی از مجموعه آموزش ده مهارت کامپیوتری مجتمع آموزشی فرهنگی باقرالعلوم (ع) است. هدف آن حفظ‌کردن نام دکمه‌ها نیست؛ دانش‌آموز باید بتواند یک سند واقعی را از مرحله ایجاد فایل تا چاپ و خروجی PDF طراحی کند.</p>
+<h2>مسیر ده‌مهارتی مجموعه</h2>
+<ol start="۱">
+<li>Windows 11 و کار با سیستم‌عامل  </li>
+<li>Microsoft Word و تولید سند حرفه‌ای  </li>
+<li>Microsoft Excel و ساخت فاکتور و کارنامه  </li>
+<li>Microsoft PowerPoint و ارائه درسی  </li>
+<li>اینترنت، ابزارهای Google و فضای مجازی  </li>
+<li>Photoshop مقدماتی و طراحی کارت ویزیت  </li>
+<li>Scratch و ساخت بازی  </li>
+<li>MIT App Inventor و ساخت اپلیکیشن و بازی موبایلی  </li>
+<li>Python و ساخت برنامه و بازی  </li>
+<li>هوش مصنوعی، اصول پرامپت‌نویسی، کمک‌آموزشی و ساخت انیمیشن</li>
+</ol>
+<h2>روش کار</h2>
+<ul>
+<li>هر درس را به‌ترتیب بخوانید و هم‌زمان در Word اجرا کنید.</li>
+<li>در پایان هر گام، فایل را با <code>Ctrl+S</code> ذخیره کنید.</li>
+<li>تمرین هدایت‌شده را انجام دهید و شاهد آن را در پوشه کار قرار دهید.</li>
+<li>یکی از چالش‌های پایه، استاندارد یا پیشرفته را انتخاب کنید.</li>
+<li>خطاها را پاک نکنید؛ ابتدا دلیل و روش اصلاح آن‌ها را ثبت کنید.</li>
+<li>فرمان‌ها با نام فارسی و معادل انگلیسی نوشته شده‌اند.</li>
+</ul>
+<blockquote>
+<p>ممکن است جای بعضی فرمان‌ها در Word 2021 و Microsoft 365 کمی متفاوت باشد، اما نام و کاربرد اصلی آن‌ها یکسان است.</p>
+</blockquote>
+<h2>نشانه‌های آموزشی</h2>
+<table>
+<thead>
+<tr>
+<th>نشانه</th>
+<th>معنی</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>هدف</td>
+<td>کاری که در پایان درس می‌توانید انجام دهید</td>
+</tr>
+<tr>
+<td>تمرین</td>
+<td>فعالیت گام‌به‌گام و الزامی</td>
+</tr>
+<tr>
+<td>نکته</td>
+<td>میان‌بر یا توضیحی برای کار بهتر</td>
+</tr>
+<tr>
+<td>هشدار</td>
+<td>خطایی که ممکن است باعث از بین رفتن یا به‌هم‌ریختگی کار شود</td>
+</tr>
+<tr>
+<td>چالش</td>
+<td>فعالیت انتخابی در سه سطح</td>
+</tr>
+<tr>
+<td>پوشه کار</td>
+<td>فایلی که توانایی شما را نشان می‌دهد</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>درس ۱: آشنایی با محیط Word</h1>
+<p><img alt="شکل ۱ ـ بخش‌های اصلی محیط Word" src="file:///workspace/assets/word-grade7/01-word-interface.png" /></p>
+<h2>هدف‌های یادگیری</h2>
+<p>در پایان این درس می‌توانید Word را اجرا کنید، یک سند خالی بسازید، هفت بخش محیط برنامه را نام ببرید و بزرگ‌نمایی را تغییر دهید.</p>
+<h2>واژگان</h2>
+<table>
+<thead>
+<tr>
+<th>فارسی</th>
+<th>English</th>
+<th>کاربرد</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>واژه‌پرداز</td>
+<td>Word Processor</td>
+<td>ساخت و ویرایش سند متنی</td>
+</tr>
+<tr>
+<td>سند</td>
+<td>Document</td>
+<td>فایل ساخته‌شده در Word</td>
+</tr>
+<tr>
+<td>نوار عنوان</td>
+<td>Title Bar</td>
+<td>نمایش نام فایل و برنامه</td>
+</tr>
+<tr>
+<td>نوار فرمان</td>
+<td>Ribbon</td>
+<td>محل زبانه‌ها و فرمان‌ها</td>
+</tr>
+<tr>
+<td>زبانه</td>
+<td>Tab</td>
+<td>دسته‌ای از ابزارهای مرتبط</td>
+</tr>
+<tr>
+<td>نوار وضعیت</td>
+<td>Status Bar</td>
+<td>اطلاعات صفحه، واژه و زبان</td>
+</tr>
+<tr>
+<td>بزرگ‌نمایی</td>
+<td>Zoom</td>
+<td>تغییر اندازه نمایش روی صفحه</td>
+</tr>
+</tbody>
+</table>
+<h2>آموزش مرحله‌به‌مرحله</h2>
+<ol start="۱">
+<li>منوی <strong>شروع (Start)</strong> را باز و <code>Word</code> را جست‌وجو کنید.  </li>
+<li>برنامه <strong>Microsoft Word</strong> را اجرا کنید.  </li>
+<li>گزینه <strong>سند خالی (Blank document)</strong> را انتخاب کنید.  </li>
+<li><strong>نوار عنوان (Title Bar)</strong>، <strong>نوار دسترسی سریع (Quick Access Toolbar)</strong> و <strong>نوار فرمان (Ribbon)</strong> را پیدا کنید.  </li>
+<li>زبانه <strong>خانه (Home)</strong> را باز کنید و گروه‌های <strong>قلم (Font)</strong> و <strong>پاراگراف (Paragraph)</strong> را بیابید.  </li>
+<li>زبانه <strong>درج (Insert)</strong> را باز و فرمان‌های <strong>Pictures</strong> و <strong>Table</strong> را پیدا کنید.  </li>
+<li>در پایین پنجره، <strong>Status Bar</strong> و <strong>Zoom Slider</strong> را پیدا کنید.  </li>
+<li>بزرگ‌نمایی را روی ۸۰٪ و سپس ۱۰۰٪ قرار دهید.</li>
+</ol>
+<h2>مثال</h2>
+<p>Word را مانند یک میز کار دیجیتال در نظر بگیرید: صفحه سفید محل نوشتن است و زبانه‌ها کشوهای ابزار هستند.</p>
+<h2>تمرین هدایت‌شده</h2>
+<p>یک سند خالی بسازید. زبانه‌های Home، Insert، Layout و View را باز کنید و در هرکدام یک فرمان را پیدا کنید. در پایان Zoom را روی ۹۰٪ قرار دهید.</p>
+<h2>نکته</h2>
+<p>اگر Ribbon دیده نمی‌شود، <code>Ctrl+F1</code> را فشار دهید یا روی یکی از زبانه‌ها دوبار کلیک کنید.</p>
+<h2>هشدار</h2>
+<p>Zoom فقط اندازه نمایش را تغییر می‌دهد و اندازه واقعی نوشته در چاپ را عوض نمی‌کند.</p>
+<h2>رفع اشکال</h2>
+<table>
+<thead>
+<tr>
+<th>مشکل</th>
+<th>راه‌حل</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Word پیدا نمی‌شود</td>
+<td>در Start عبارت کامل Microsoft Word را جست‌وجو کنید</td>
+</tr>
+<tr>
+<td>Ribbon پنهان است</td>
+<td><code>Ctrl+F1</code> را بزنید</td>
+</tr>
+<tr>
+<td>صفحه بسیار کوچک است</td>
+<td>Zoom را روی ۱۰۰٪ قرار دهید</td>
+</tr>
+<tr>
+<td>یک الگو باز شده است</td>
+<td>از File &gt; New &gt; Blank document استفاده کنید</td>
+</tr>
+</tbody>
+</table>
+<h2>چالش سه‌سطحی</h2>
+<ul>
+<li><strong>پایه:</strong> چهار بخش محیط Word را نام ببرید.</li>
+<li><strong>استاندارد:</strong> محل پنج فرمانی را که مدرس نام می‌برد پیدا کنید.</li>
+<li><strong>پیشرفته:</strong> فرمان Quick Print را به Quick Access Toolbar اضافه کنید.</li>
+</ul>
+<p><strong>شاهد پوشه کار:</strong> تصویر محیط Word با نام‌گذاری دست‌کم شش بخش.<br />
+<strong>پرسش خروج:</strong> تفاوت Tab و Command چیست؟</p>
+<hr />
+<h1>درس ۲: ایجاد، ذخیره و مدیریت فایل</h1>
+<p><img alt="شکل ۲ ـ مسیر ذخیره نخستین سند" src="file:///workspace/assets/word-grade7/02-save-workflow.png" /></p>
+<h2>هدف‌های یادگیری</h2>
+<p>در پایان این درس می‌توانید سند جدید بسازید، آن را در پوشه درست ذخیره کنید، دوباره باز کنید و تفاوت Save و Save As را توضیح دهید.</p>
+<h2>واژگان</h2>
+<p>New، Open، Save، Save As، Browse، Folder، File Name و File Extension.</p>
+<h2>آموزش مرحله‌به‌مرحله</h2>
+<ol start="۱">
+<li>با <strong>File &gt; New &gt; Blank document</strong> سند جدید بسازید.  </li>
+<li>عبارت «گزارش فعالیت علمی» را تایپ کنید.  </li>
+<li><code>Ctrl+S</code> را فشار دهید.  </li>
+<li><strong>Browse</strong> را انتخاب و پوشه کلاس را باز کنید.  </li>
+<li>نام فایل را <code>درس02-مدیریت‌فایل-نام‌خانوادگی</code> بنویسید.  </li>
+<li>نوع فایل را <strong>Word Document (*.docx)</strong> نگه دارید و <strong>Save</strong> را بزنید.  </li>
+<li>یک جمله اضافه و دوباره <code>Ctrl+S</code> را اجرا کنید.  </li>
+<li>با <strong>File &gt; Save As</strong> نسخه‌ای با نام <code>درس02-مدیریت‌فایل-نسخه2</code> بسازید.  </li>
+<li>Word را ببندید و فایل را از <strong>File &gt; Open &gt; Browse</strong> دوباره باز کنید.</li>
+</ol>
+<h2>نام‌گذاری درست</h2>
+<p>نام <code>New Microsoft Word Document (3).docx</code> موضوع فایل را نشان نمی‌دهد؛ اما <code>درس02-گزارش-علی‌رضایی.docx</code> روشن و قابل جست‌وجو است.</p>
+<h2>تمرین هدایت‌شده</h2>
+<p>پوشه <code>Word-7-نام‌خانوادگی</code> را بسازید و درون آن پوشه‌های <code>تمرین‌ها</code>، <code>تصاویر</code>، <code>پروژه نهایی</code> و <code>پشتیبان</code> را ایجاد کنید. یک سند را در تمرین‌ها ذخیره و نسخه دوم آن را در پشتیبان قرار دهید.</p>
+<h2>میان‌برها</h2>
+<table>
+<thead>
+<tr>
+<th>عمل</th>
+<th>میان‌بر</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>سند جدید</td>
+<td><code>Ctrl+N</code></td>
+</tr>
+<tr>
+<td>بازکردن</td>
+<td><code>Ctrl+O</code></td>
+</tr>
+<tr>
+<td>ذخیره</td>
+<td><code>Ctrl+S</code></td>
+</tr>
+<tr>
+<td>بستن سند</td>
+<td><code>Ctrl+W</code></td>
+</tr>
+</tbody>
+</table>
+<h2>هشدار</h2>
+<p>هنگام تغییر نام فایل، پسوند <code>.docx</code> را حذف یا تغییر ندهید.</p>
+<h2>رفع اشکال</h2>
+<ul>
+<li>فایل پیدا نمی‌شود: محل ذخیره را در File Explorer بررسی کنید.</li>
+<li>تغییرات از بین رفته است: پس از هر بخش مهم <code>Ctrl+S</code> بزنید.</li>
+<li>فایل فقط خواندنی است: با Save As نسخه‌ای در پوشه شخصی بسازید.</li>
+<li>دو فایل شبیه هم هستند: تاریخ یا شماره نسخه را به نام اضافه کنید.</li>
+</ul>
+<h2>چالش سه‌سطحی</h2>
+<ul>
+<li><strong>پایه:</strong> یک فایل با نام استاندارد ذخیره کنید.</li>
+<li><strong>استاندارد:</strong> از یک سند دو نسخه شماره‌گذاری‌شده بسازید.</li>
+<li><strong>پیشرفته:</strong> ساختار پوشه‌ای جدا برای تمرین، تصویر، PDF و پشتیبان طراحی کنید.</li>
+</ul>
+<p><strong>شاهد پوشه کار:</strong> تصویر پوشه‌ها و دو فایل دارای نام استاندارد.<br />
+<strong>پرسش خروج:</strong> چه زمانی Save As را به‌جای Save به‌کار می‌بریم؟</p>
+<hr />
+<h1>درس ۳: تایپ فارسی و انگلیسی</h1>
+<p><img alt="شکل ۳ ـ آماده‌سازی Word برای تایپ فارسی" src="file:///workspace/assets/word-grade7/03-persian-typing.png" /></p>
+<h2>هدف‌های یادگیری</h2>
+<p>می‌توانید زبان صفحه‌کلید و جهت متن را تغییر دهید، متن فارسی و انگلیسی بنویسید و نیم‌فاصله و نشانه‌گذاری را درست به‌کار ببرید.</p>
+<h2>آموزش مرحله‌به‌مرحله</h2>
+<ol start="۱">
+<li>با <code>Windows+Space</code> زبان فارسی یا انگلیسی را انتخاب کنید.  </li>
+<li>از <strong>Home &gt; Paragraph</strong> جهت را روی <strong>Right-to-Left Text Direction</strong> قرار دهید.  </li>
+<li>بنویسید: «دانش‌آموزان پایه هفتم با نرم‌افزار Word کار می‌کنند.»  </li>
+<li>زبان را به English تغییر دهید و <code>Microsoft Word 2021</code> را تایپ کنید.  </li>
+<li>دوباره به فارسی بازگردید.  </li>
+<li>در «می‌روم»، «دانش‌آموز» و «نرم‌افزار» نیم‌فاصله قرار دهید.  </li>
+<li>میان‌بر رایج نیم‌فاصله <code>Ctrl+Shift+2</code> است؛ در بعضی چیدمان‌ها <code>Shift+Space</code> کار می‌کند.  </li>
+<li>اگر میان‌بر کار نکرد، از <strong>Insert &gt; Symbol &gt; More Symbols</strong> نویسه Unicode با کد <code>200C</code> را درج کنید.  </li>
+<li>پیش از نقطه و ویرگول فاصله نگذارید و پس از آن‌ها یک فاصله بگذارید.</li>
+</ol>
+<h2>قبل و بعد</h2>
+<p>نادرست: <code>من می روم ،زیرا کلاس ها شروع شده اند .</code><br />
+درست: <code>من می‌روم، زیرا کلاس‌ها شروع شده‌اند.</code></p>
+<h2>تمرین هدایت‌شده</h2>
+<p>متن زیر را تایپ و اصلاح کنید:</p>
+<p>«دانش آموزان می توانند فایل های خود را در Microsoft Word ذخیره کنند .این نرم افزار یک واژه پرداز است.»</p>
+<h2>نکته</h2>
+<p>اگر بخش فارسی میان متن انگلیسی به‌هم ریخت، همان بخش را انتخاب و جهت Right-to-Left یا Left-to-Right را جداگانه اعمال کنید.</p>
+<h2>هشدار</h2>
+<p>چند فاصله معمولی جای نیم‌فاصله نیست. نیم‌فاصله یک نویسه مستقل است.</p>
+<h2>رفع اشکال</h2>
+<table>
+<thead>
+<tr>
+<th>مشکل</th>
+<th>راه‌حل</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>حروف انگلیسی تایپ می‌شوند</td>
+<td>زبان ورودی را با Windows+Space تغییر دهید</td>
+</tr>
+<tr>
+<td>نقطه در ابتدای سطر دیده می‌شود</td>
+<td>جهت پاراگراف را راست‌به‌چپ کنید</td>
+</tr>
+<tr>
+<td>میان واژه‌ها فاصله بزرگ است</td>
+<td>فاصله‌های اضافی را حذف کنید</td>
+</tr>
+<tr>
+<td>نیم‌فاصله درج نمی‌شود</td>
+<td>روش Unicode 200C را اجرا کنید</td>
+</tr>
+</tbody>
+</table>
+<h2>چالش سه‌سطحی</h2>
+<ul>
+<li><strong>پایه:</strong> پنج واژه دارای نیم‌فاصله بنویسید.</li>
+<li><strong>استاندارد:</strong> یک بند پنج‌خطی با دو عبارت انگلیسی تایپ کنید.</li>
+<li><strong>پیشرفته:</strong> متن دارای فاصله و جهت نادرست را بدون بازنویسی کامل اصلاح کنید.</li>
+</ul>
+<p><strong>شاهد پوشه کار:</strong> فایل شامل متن قبل و بعد از اصلاح.<br />
+<strong>پرسش خروج:</strong> نیم‌فاصله در «می‌روم» چه تفاوتی با فاصله معمولی دارد؟</p>
+<hr />
+<h1>درس ۴: انتخاب و ویرایش متن</h1>
+<p><img alt="شکل ۴ ـ ابزارهای انتخاب، ویرایش و جست‌وجو" src="file:///workspace/assets/word-grade7/04-editing-tools.png" /></p>
+<h2>هدف‌های یادگیری</h2>
+<p>می‌توانید متن را انتخاب، کپی، جابه‌جا یا حذف کنید، تغییر را بازگردانید و واژه‌ای را جست‌وجو یا جایگزین کنید.</p>
+<h2>آموزش مرحله‌به‌مرحله</h2>
+<ol start="۱">
+<li>برای انتخاب یک واژه روی آن دوبار و برای انتخاب بند سه‌بار کلیک کنید.  </li>
+<li>برای انتخاب همه سند <code>Ctrl+A</code> را بزنید.  </li>
+<li>متن انتخاب‌شده را با <code>Ctrl+C</code> کپی یا با <code>Ctrl+X</code> برش دهید.  </li>
+<li>مکان‌نما را در مقصد قرار دهید و <code>Ctrl+V</code> را بزنید.  </li>
+<li>اشتباه را با <code>Ctrl+Z</code> بازگردانید و با <code>Ctrl+Y</code> دوباره اجرا کنید.  </li>
+<li>با <code>Ctrl+F</code> واژه‌ای را جست‌وجو کنید.  </li>
+<li>با <code>Ctrl+H</code> پنجره Find and Replace را باز کنید.  </li>
+<li>واژه قبلی را در <strong>Find what</strong> و واژه تازه را در <strong>Replace with</strong> بنویسید.  </li>
+<li>ابتدا <strong>Find Next</strong> و <strong>Replace</strong> را اجرا کنید و فقط پس از بررسی از <strong>Replace All</strong> استفاده کنید.</li>
+</ol>
+<h2>تمرین هدایت‌شده</h2>
+<p>یک بند چهارخطی بسازید؛ جمله دوم را به انتها منتقل کنید؛ واژه «مدرسه» را سه بار کپی کنید؛ یک تغییر را Undo و Redo کنید؛ سپس همه موارد «ورد» را با «Word» جایگزین کنید.</p>
+<h2>نکته</h2>
+<p>برای چسباندن متن بدون قالب قبلی، از <strong>Paste Options &gt; Keep Text Only</strong> استفاده کنید.</p>
+<h2>هشدار</h2>
+<p>پیش از Replace All مطمئن شوید واژه موردنظر بخشی از واژه‌های دیگر نیست.</p>
+<h2>رفع اشکال</h2>
+<ul>
+<li>متن انتخاب‌شده پاک شد: <code>Ctrl+Z</code> بزنید.</li>
+<li>قالب ناخواسته منتقل شد: Keep Text Only را انتخاب کنید.</li>
+<li>Replace موارد اشتباه را تغییر داد: Undo کنید و جایگزینی را موردبه‌مورد انجام دهید.</li>
+<li>متن جابه‌جا نشد: پس از Cut مکان‌نما را در مقصد قرار دهید و Paste کنید.</li>
+</ul>
+<h2>چالش سه‌سطحی</h2>
+<ul>
+<li><strong>پایه:</strong> سه جمله را به ترتیب درست مرتب کنید.</li>
+<li><strong>استاندارد:</strong> متن به‌هم‌ریخته را با Cut، Copy و Paste اصلاح کنید.</li>
+<li><strong>پیشرفته:</strong> با Find and Replace فاصله‌های دوتایی را حذف کنید.</li>
+</ul>
+<p><strong>شاهد پوشه کار:</strong> متن اولیه و متن ویرایش‌شده همراه توضیح سه تغییر.<br />
+<strong>پرسش خروج:</strong> چرا Replace All همیشه بهترین انتخاب نیست؟</p>
+<hr />
+<h1>درس ۵: قالب‌بندی متن</h1>
+<p><img alt="شکل ۵ ـ مقایسه متن خام و قالب‌بندی‌شده" src="file:///workspace/assets/word-grade7/05-text-formatting.png" /></p>
+<h2>هدف‌های یادگیری</h2>
+<p>می‌توانید قلم و اندازه را تغییر دهید، تأکید مناسب بسازید، رنگ را محدود و هدفمند به‌کار ببرید و قالب‌های شلوغ را پاک کنید.</p>
+<h2>آموزش مرحله‌به‌مرحله</h2>
+<ol start="۱">
+<li>متن را انتخاب کنید.  </li>
+<li>در <strong>Home &gt; Font</strong> قلم و Font Size را تنظیم کنید.  </li>
+<li>عنوان را با <strong>Bold</strong> یا <code>Ctrl+B</code> ضخیم کنید.  </li>
+<li>در صورت نیاز از <strong>Italic</strong>، <strong>Underline</strong> و <strong>Font Color</strong> استفاده کنید.  </li>
+<li>برای تأکید کوتاه، <strong>Text Highlight Color</strong> را به‌کار ببرید.  </li>
+<li>برای پاک‌کردن قالب نامناسب، <strong>Clear All Formatting</strong> را اجرا کنید.  </li>
+<li>الگوی زیر را رعایت کنید:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>بخش</th>
+<th style="text-align: right;">اندازه پیشنهادی</th>
+<th>حالت</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>عنوان اصلی</td>
+<td style="text-align: right;">۱۸</td>
+<td>ضخیم</td>
+</tr>
+<tr>
+<td>عنوان فرعی</td>
+<td style="text-align: right;">۱۴</td>
+<td>ضخیم</td>
+</tr>
+<tr>
+<td>متن اصلی</td>
+<td style="text-align: right;">۱۲ یا ۱۳</td>
+<td>معمولی</td>
+</tr>
+<tr>
+<td>شرح تصویر</td>
+<td style="text-align: right;">۱۰</td>
+<td>معمولی</td>
+</tr>
+</tbody>
+</table>
+<h2>تمرین هدایت‌شده</h2>
+<p>متنی با یک عنوان اصلی، دو عنوان فرعی و دو بند بسازید و سه سطح قالب‌بندی هماهنگ روی آن اعمال کنید.</p>
+<h2>نکته</h2>
+<p>برای انتقال قالب یک قسمت به قسمت دیگر از <strong>Format Painter</strong> استفاده کنید.</p>
+<h2>هشدار</h2>
+<p>استفاده هم‌زمان از چند قلم، چند رنگ و چند نوع تأکید، خوانایی را کم می‌کند.</p>
+<h2>رفع اشکال</h2>
+<ul>
+<li>فقط بخشی از واژه تغییر می‌کند: کل واژه را انتخاب کنید.</li>
+<li>صفحه بیش از حد رنگی است: رنگ‌ها را به یک رنگ تأکیدی محدود کنید.</li>
+<li>قالب‌های عجیب باقی مانده‌اند: Clear All Formatting را اجرا کنید.</li>
+<li>قلم روی رایانه دیگر عوض می‌شود: از قلم‌های رایج مدرسه استفاده کنید.</li>
+</ul>
+<h2>چالش سه‌سطحی</h2>
+<ul>
+<li><strong>پایه:</strong> عنوان و متن اصلی را متمایز کنید.</li>
+<li><strong>استاندارد:</strong> یک صفحه با سه سطح عنوان منظم بسازید.</li>
+<li><strong>پیشرفته:</strong> یک متن شلوغ را با دو اندازه و یک رنگ تأکیدی بازطراحی کنید.</li>
+</ul>
+<p><strong>شاهد پوشه کار:</strong> یک صفحه قبل و بعد از اصلاح قالب‌بندی.<br />
+<strong>پرسش خروج:</strong> برای مهم نشان‌دادن عنوان، کدام دو ویژگی مناسب‌ترند؟</p>
+<hr />
+<h1>درس ۶: پاراگراف و فهرست‌ها</h1>
+<p><img alt="شکل ۶ ـ تنظیم‌های مهم پاراگراف" src="file:///workspace/assets/word-grade7/06-paragraph-layout.png" /></p>
+<h2>هدف‌های یادگیری</h2>
+<p>می‌توانید تراز، فاصله خطوط، فاصله بندها و تورفتگی را تنظیم و فهرست نشانه‌دار یا شماره‌دار بسازید.</p>
+<h2>آموزش مرحله‌به‌مرحله</h2>
+<ol start="۱">
+<li>مکان‌نما را در بند قرار دهید یا چند بند را انتخاب کنید.  </li>
+<li>از <strong>Home &gt; Paragraph</strong> تراز Right، Center، Left یا Justify را انتخاب کنید.  </li>
+<li>برای متن فارسی معمولاً Right یا Justify مناسب است.  </li>
+<li>از <strong>Line and Paragraph Spacing</strong> فاصله خطوط را روی 1.15 یا 1.5 قرار دهید.  </li>
+<li>در تنظیمات Paragraph، فاصله <strong>Before/After</strong> را تغییر دهید.  </li>
+<li>تورفتگی را با <strong>Increase Indent/Decrease Indent</strong> تنظیم کنید.  </li>
+<li>موارد هم‌ارز را با <strong>Bullets</strong> و مراحل ترتیبی را با <strong>Numbering</strong> نمایش دهید.  </li>
+<li><code>Enter</code> بند تازه و <code>Shift+Enter</code> شکست سطر بدون بند تازه می‌سازد.</li>
+</ol>
+<h2>تمرین هدایت‌شده</h2>
+<p>صفحه‌ای با عنوان وسط‌چین، یک بند دوطرفه با فاصله 1.5، فهرست نشانه‌دار چهارموردی و فهرست شماره‌دار سه‌مرحله‌ای بسازید.</p>
+<h2>نکته</h2>
+<p>برای فاصله میان بندها چند بار Enter نزنید؛ از Spacing Before/After استفاده کنید.</p>
+<h2>هشدار</h2>
+<p>برای وسط‌چین یا تورفتگی از Spaceهای پشت‌سرهم استفاده نکنید؛ صفحه با کوچک‌ترین تغییر به‌هم می‌ریزد.</p>
+<h2>رفع اشکال</h2>
+<table>
+<thead>
+<tr>
+<th>مشکل</th>
+<th>راه‌حل</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>همه سند وسط‌چین شد</td>
+<td>فقط بندهای لازم را انتخاب و تراز را اصلاح کنید</td>
+</tr>
+<tr>
+<td>شماره‌گذاری ادامه ندارد</td>
+<td>Continue Numbering را انتخاب کنید</td>
+</tr>
+<tr>
+<td>شماره از نو شروع نمی‌شود</td>
+<td>Restart at 1 را اجرا کنید</td>
+</tr>
+<tr>
+<td>فاصله بندها زیاد است</td>
+<td>Before و After را بررسی کنید</td>
+</tr>
+</tbody>
+</table>
+<h2>چالش سه‌سطحی</h2>
+<ul>
+<li><strong>پایه:</strong> یک فهرست نشانه‌دار پنج‌موردی بسازید.</li>
+<li><strong>استاندارد:</strong> مراحل انجام یک آزمایش را شماره‌گذاری کنید.</li>
+<li><strong>پیشرفته:</strong> یک Multilevel List ساده ایجاد کنید.</li>
+</ul>
+<p><strong>شاهد پوشه کار:</strong> یک بند تنظیم‌شده و دو نوع فهرست.<br />
+<strong>پرسش خروج:</strong> چه زمانی Numbering از Bullets مناسب‌تر است؟</p>
+<hr />
+<h1>درس ۷: درج و تنظیم تصویر</h1>
+<p><img alt="شکل ۷ ـ درج، اندازه و چیدمان تصویر" src="file:///workspace/assets/word-grade7/07-picture-layout.png" /></p>
+<h2>هدف‌های یادگیری</h2>
+<p>می‌توانید تصویر را درج کنید، اندازه آن را بدون تغییر تناسب تنظیم کنید، آن را برش دهید و شیوه قرارگیری متن را تغییر دهید.</p>
+<h2>آموزش مرحله‌به‌مرحله</h2>
+<ol start="۱">
+<li>تصویر مناسب را در پوشه <code>تصاویر</code> ذخیره کنید.  </li>
+<li>مکان‌نما را در محل درج بگذارید.  </li>
+<li>از <strong>Insert &gt; Pictures &gt; This Device</strong> تصویر را انتخاب کنید.  </li>
+<li>برای تغییر اندازه، دستگیره گوشه تصویر را بکشید.  </li>
+<li>از <strong>Picture Format &gt; Wrap Text</strong> یکی از حالت‌ها را انتخاب کنید:</li>
+</ol>
+<ul>
+<li><strong>In Line with Text:</strong> تصویر مانند یک نویسه</li>
+<li><strong>Square:</strong> متن پیرامون کادر</li>
+<li><strong>Top and Bottom:</strong> متن فقط بالا و پایین تصویر</li>
+</ul>
+<ol start="۶">
+<li>با <strong>Crop</strong> بخش‌های اضافی را حذف کنید.  </li>
+<li>تصویر را وسط‌چین کنید.  </li>
+<li>زیر آن بنویسید: «شکل ۱ ـ محیط برنامه Word».</li>
+</ol>
+<h2>تمرین هدایت‌شده</h2>
+<p>یک تصویر آموزشی درج کنید، آن را برش دهید، عرضش را حدود نصف صفحه قرار دهید، Wrap Text را روی Top and Bottom بگذارید و شرح یک‌خطی بنویسید.</p>
+<h2>نکته</h2>
+<p>برای حفظ تناسب، تصویر را از گوشه تغییر اندازه دهید و بیش از اندازه بزرگ نکنید.</p>
+<h2>هشدار</h2>
+<p>هر تصویر اینترنتی آزاد نیست. از تصویر خودتان، منبع مجاز یا فایل معرفی‌شده مدرس استفاده کنید.</p>
+<h2>رفع اشکال</h2>
+<ul>
+<li>تصویر جابه‌جا نمی‌شود: Wrap Text را بررسی کنید.</li>
+<li>تصویر کشیده شده است: Undo کنید و فقط دستگیره گوشه را بکشید.</li>
+<li>فایل بسیار حجیم است: Compress Pictures را با حفظ نسخه اصلی اجرا کنید.</li>
+<li>متن روی تصویر افتاده است: Top and Bottom را انتخاب کنید.</li>
+</ul>
+<h2>چالش سه‌سطحی</h2>
+<ul>
+<li><strong>پایه:</strong> تصویر را درج و وسط‌چین کنید.</li>
+<li><strong>استاندارد:</strong> تصویر را برش دهید و شرح بنویسید.</li>
+<li><strong>پیشرفته:</strong> دو تصویر هم‌اندازه با تراز و فاصله منظم قرار دهید.</li>
+</ul>
+<p><strong>شاهد پوشه کار:</strong> فایل Word و تصویر اصلی.<br />
+<strong>پرسش خروج:</strong> چرا In Line with Text برای شروع ساده‌تر است؟</p>
+<hr />
+<h1>درس ۸: ساخت جدول</h1>
+<p><img alt="شکل ۸ ـ اجزای یک جدول ساده" src="file:///workspace/assets/word-grade7/08-table-parts.png" /></p>
+<h2>هدف‌های یادگیری</h2>
+<p>می‌توانید جدول بسازید، داده وارد کنید، سطر و ستون را تغییر دهید و جدول را ساده و خوانا قالب‌بندی کنید.</p>
+<h2>آموزش مرحله‌به‌مرحله</h2>
+<ol start="۱">
+<li>از <strong>Insert &gt; Table</strong> یک جدول ۴ ستون و ۵ سطر بسازید.  </li>
+<li>در سطر اول عنوان ستون‌ها را وارد کنید.  </li>
+<li>با <code>Tab</code> به سلول بعدی بروید.  </li>
+<li>از <strong>Table Layout &gt; Insert Above/Below/Left/Right</strong> سطر یا ستون اضافه کنید.  </li>
+<li>برای حذف از <strong>Table Layout &gt; Delete</strong> استفاده کنید.  </li>
+<li>برای عنوان سراسری، سلول‌های موردنظر را انتخاب و <strong>Merge Cells</strong> را اجرا کنید.  </li>
+<li>عرض ستون‌ها را با مرزها یا <strong>AutoFit</strong> تنظیم کنید.  </li>
+<li>در <strong>Table Design</strong> سبک ساده‌ای انتخاب کنید.  </li>
+<li>با <strong>Borders</strong> خطوط واقعی و با <strong>Shading</strong> زمینه محدود بسازید.  </li>
+<li>سطر عنوان را ضخیم و وسط‌چین کنید.</li>
+</ol>
+<h2>تمرین هدایت‌شده</h2>
+<p>جدول برنامه هفتگی با ۵ ستون و ۶ سطر بسازید. سطر عنوان را متمایز، نوشته‌ها را وسط‌چین و عرض ستون‌ها را منظم کنید.</p>
+<h2>نکته</h2>
+<p>فشردن <code>Tab</code> در آخرین سلول، یک سطر تازه می‌سازد.</p>
+<h2>هشدار</h2>
+<p>جدول را با Space یا Tabهای پشت‌سرهم شبیه‌سازی نکنید.</p>
+<h2>رفع اشکال</h2>
+<table>
+<thead>
+<tr>
+<th>مشکل</th>
+<th>راه‌حل</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>جدول از صفحه بیرون رفته</td>
+<td>AutoFit to Window را اجرا کنید</td>
+</tr>
+<tr>
+<td>سطر ناخواسته اضافه شد</td>
+<td>Undo یا Delete Row را اجرا کنید</td>
+</tr>
+<tr>
+<td>متن در سلول جا نمی‌شود</td>
+<td>عرض ستون یا اندازه متن را تنظیم کنید</td>
+</tr>
+<tr>
+<td>خطوط چاپ نمی‌شوند</td>
+<td>Borders واقعی را فعال کنید؛ Gridlines چاپ نمی‌شود</td>
+</tr>
+</tbody>
+</table>
+<h2>چالش سه‌سطحی</h2>
+<ul>
+<li><strong>پایه:</strong> جدول ۳×۴ بسازید.</li>
+<li><strong>استاندارد:</strong> برنامه هفتگی کامل طراحی کنید.</li>
+<li><strong>پیشرفته:</strong> عنوان سراسری جدول را با Merge Cells بسازید.</li>
+</ul>
+<p><strong>شاهد پوشه کار:</strong> جدول خام و نسخه قالب‌بندی‌شده.<br />
+<strong>پرسش خروج:</strong> Gridlines و Borders چه تفاوتی دارند؟</p>
+<hr />
+<h1>درس ۹: صفحه‌آرایی و شماره صفحه</h1>
+<p><img alt="شکل ۹ ـ اجزای صفحه‌آرایی استاندارد" src="file:///workspace/assets/word-grade7/09-page-layout.png" /></p>
+<h2>هدف‌های یادگیری</h2>
+<p>می‌توانید اندازه، جهت و حاشیه صفحه را تنظیم کنید، Page Break بسازید و Header، Footer و Page Number درج کنید.</p>
+<h2>آموزش مرحله‌به‌مرحله</h2>
+<ol start="۱">
+<li>از <strong>Layout &gt; Size</strong> اندازه A4 را انتخاب کنید.  </li>
+<li>در <strong>Layout &gt; Orientation</strong> حالت Portrait یا Landscape را تعیین کنید.  </li>
+<li>از <strong>Layout &gt; Margins</strong> حاشیه Normal را انتخاب کنید.  </li>
+<li>برای صفحه تازه <code>Ctrl+Enter</code> یا <strong>Insert &gt; Page Break</strong> را اجرا کنید.  </li>
+<li>از <strong>Insert &gt; Header</strong> سربرگ ساده‌ای با نام درس بسازید.  </li>
+<li>از <strong>Insert &gt; Footer</strong> نام دانش‌آموز را در پابرگ بنویسید.  </li>
+<li>از <strong>Insert &gt; Page Number</strong> شماره را در پایین صفحه قرار دهید.  </li>
+<li>برای نبودن شماره روی صفحه اول، <strong>Different First Page</strong> را فعال کنید.  </li>
+<li>با <strong>Close Header and Footer</strong> به متن اصلی بازگردید.</li>
+</ol>
+<h2>تمرین هدایت‌شده</h2>
+<p>یک سند دوصفحه‌ای A4 و Portrait با Margins عادی، سربرگ نام درس، پابرگ نام دانش‌آموز و شماره صفحه بسازید.</p>
+<h2>نکته</h2>
+<p>برای صفحه تازه چند بار Enter نزنید؛ همیشه Page Break را به‌کار ببرید.</p>
+<h2>هشدار</h2>
+<p>تغییر Orientation معمولاً کل بخش جاری را تغییر می‌دهد. جهت متفاوت در یک صفحه به Section Break نیاز دارد و خارج از این درس است.</p>
+<h2>رفع اشکال</h2>
+<ul>
+<li>Header کم‌رنگ دیده می‌شود: طبیعی است و در چاپ عادی ظاهر می‌شود.</li>
+<li>صفحه خالی ناخواسته است: <code>Ctrl+Shift+8</code> را بزنید و Page Break یا بندهای اضافی را بررسی کنید.</li>
+<li>شماره تکرار نمی‌شود: آن را با Page Number در Header یا Footer درج کنید.</li>
+<li>همه متن به صفحه دوم رفت: Page Break اشتباه را حذف کنید.</li>
+</ul>
+<h2>چالش سه‌سطحی</h2>
+<ul>
+<li><strong>پایه:</strong> شماره صفحه درج کنید.</li>
+<li><strong>استاندارد:</strong> سند دوصفحه‌ای با Header و Footer بسازید.</li>
+<li><strong>پیشرفته:</strong> صفحه اول را بدون شماره نمایشی تنظیم کنید.</li>
+</ul>
+<p><strong>شاهد پوشه کار:</strong> فایل دوصفحه‌ای کامل.<br />
+<strong>پرسش خروج:</strong> چرا Page Break از Enterهای متعدد بهتر است؟</p>
+<hr />
+<h1>درس ۱۰: چاپ و خروجی PDF</h1>
+<p><img alt="شکل ۱۰ ـ کنترل پیش از چاپ و خروجی PDF" src="file:///workspace/assets/word-grade7/10-print-pdf.png" /></p>
+<h2>هدف‌های یادگیری</h2>
+<p>می‌توانید پیش‌نمایش چاپ را بررسی کنید، محدوده چاپ را تنظیم کنید، سند را به PDF تبدیل و فایل‌های نهایی را درست تحویل دهید.</p>
+<h2>آموزش مرحله‌به‌مرحله</h2>
+<ol start="۱">
+<li>سند را با <code>Ctrl+S</code> ذخیره کنید.  </li>
+<li>با <strong>File &gt; Print</strong> یا <code>Ctrl+P</code> وارد Print Preview شوید.  </li>
+<li>تعداد صفحات، حاشیه، تصویر، جدول، شماره صفحه و صفحه خالی را بررسی کنید.  </li>
+<li>Printer درست، Copies و Page Range را کنترل کنید.  </li>
+<li>بدون اجازه مدرس فرمان نهایی Print را اجرا نکنید.  </li>
+<li>برای PDF از <strong>File &gt; Export &gt; Create PDF/XPS</strong> یا <strong>File &gt; Save As &gt; PDF</strong> استفاده کنید.  </li>
+<li>فایل‌ها را با نام‌های زیر ذخیره کنید:</li>
+</ol>
+<ul>
+<li><code>پروژه-Word-نام‌خانوادگی.docx</code></li>
+<li><code>پروژه-Word-نام‌خانوادگی.pdf</code></li>
+</ul>
+<ol start="۸">
+<li>PDF را باز و صفحه‌به‌صفحه کنترل کنید.</li>
+</ol>
+<h2>تمرین هدایت‌شده</h2>
+<p>یک سند دوصفحه‌ای دارای سه خطای ظاهری را بررسی کنید، خطاها را اصلاح و خروجی PDF تهیه کنید.</p>
+<h2>نکته</h2>
+<p>PDF ظاهر سند را برای مشاهده و چاپ حفظ می‌کند، اما DOCX برای ادامه ویرایش لازم است.</p>
+<h2>هشدار</h2>
+<p>پیش از چاپ، نام چاپگر و تعداد نسخه را کنترل کنید تا کاغذ و جوهر هدر نرود.</p>
+<h2>رفع اشکال</h2>
+<table>
+<thead>
+<tr>
+<th>مشکل</th>
+<th>راه‌حل</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PDF نسخه قدیمی است</td>
+<td>DOCX را ذخیره و PDF را دوباره بسازید</td>
+</tr>
+<tr>
+<td>جدول در PDF بریده شده</td>
+<td>عرض جدول و حاشیه‌ها را اصلاح کنید</td>
+</tr>
+<tr>
+<td>صفحه سفید دیده می‌شود</td>
+<td>Page Break و بندهای خالی را بررسی کنید</td>
+</tr>
+<tr>
+<td>PDF پیدا نمی‌شود</td>
+<td>محل انتخاب‌شده در Save As را بررسی کنید</td>
+</tr>
+</tbody>
+</table>
+<h2>چالش سه‌سطحی</h2>
+<ul>
+<li><strong>پایه:</strong> از یک صفحه PDF بسازید.</li>
+<li><strong>استاندارد:</strong> سند دوصفحه‌ای را در DOCX و PDF تحویل دهید.</li>
+<li><strong>پیشرفته:</strong> فقط صفحات مشخصی را خروجی بگیرید و تفاوت را توضیح دهید.</li>
+</ul>
+<p><strong>شاهد پوشه کار:</strong> DOCX، PDF و چک‌لیست کنترل چاپ.<br />
+<strong>پرسش خروج:</strong> چرا نگهداری هر دو فایل DOCX و PDF لازم است؟</p>
+<hr />
+<h1>پروژه پایانی: بازسازی بخشی از کتاب درسی</h1>
+<h2>مأموریت</h2>
+<p>دو صفحه پیوسته از یک بخش مناسب کتاب درسی را در Word بازسازی کنید. نمونه بهتر است شامل عنوان، چند بند، تصویر و یک جدول یا فهرست ساده باشد. خروجی فقط برای فعالیت آموزشی کلاس استفاده می‌شود.</p>
+<p><img alt="نقشه اجرای پروژه پایانی Word" src="file:///workspace/assets/word-grade7/11-final-project-map.png" /></p>
+<h2>مراحل پروژه</h2>
+<ol start="۱">
+<li><strong>تحلیل نمونه:</strong> عنوان‌ها، بندها، تصویر، جدول، حاشیه و شماره صفحه را علامت بزنید.  </li>
+<li><strong>ساخت پوشه:</strong> پوشه‌های منابع، تصاویر، نسخه‌های کاری و تحویل نهایی را ایجاد کنید.  </li>
+<li><strong>ایجاد سند:</strong> A4، جهت، حاشیه و نام فایل را تنظیم کنید.  </li>
+<li><strong>ورود متن:</strong> فارسی و انگلیسی، جهت، نیم‌فاصله و نشانه‌گذاری را بررسی کنید.  </li>
+<li><strong>قالب‌بندی:</strong> عنوان‌ها، متن، بندها و فهرست‌ها را هماهنگ کنید.  </li>
+<li><strong>تصویر و جدول:</strong> اندازه، Wrap Text، شرح، سطر، ستون و Borders را تنظیم کنید.  </li>
+<li><strong>صفحه‌آرایی:</strong> صفحه دوم را با Page Break، سپس Header/Footer و شماره صفحه بسازید.  </li>
+<li><strong>کنترل:</strong> Print Preview را ببینید و خطاهای صفحه را اصلاح کنید.  </li>
+<li><strong>خروجی:</strong> DOCX و PDF نهایی را تولید کنید.  </li>
+<li><strong>ارائه:</strong> یک تصمیم خوب و یک خطای اصلاح‌شده را برای کلاس توضیح دهید.</li>
+</ol>
+<h2>فایل‌های تحویلی</h2>
+<ol>
+<li><code>پروژه-نهایی-نام‌خانوادگی.docx</code></li>
+<li><code>پروژه-نهایی-نام‌خانوادگی.pdf</code></li>
+<li>تصویر یا فایل مرجع در صورت اجازه مدرس</li>
+<li>فرم خودارزیابی</li>
+<li>پوشه تصاویر استفاده‌شده</li>
+</ol>
+<hr />
+<h1>چک‌لیست پروژه</h1>
+<p>برای هر مورد «انجام شد»، «نیاز به اصلاح» یا «نامربوط» را علامت بزنید.</p>
+<ul>
+<li>[ ] فایل در پوشه درست و با نام استاندارد ذخیره شده است.</li>
+<li>[ ] سند دقیقاً دو صفحه دارد.</li>
+<li>[ ] اندازه، جهت و حاشیه مناسب است.</li>
+<li>[ ] عنوان اصلی و عنوان‌های فرعی مشخص‌اند.</li>
+<li>[ ] قالب عنوان‌های هم‌سطح یکسان است.</li>
+<li>[ ] فارسی راست‌به‌چپ و انگلیسی درست نمایش داده می‌شود.</li>
+<li>[ ] نیم‌فاصله و نشانه‌گذاری بررسی شده است.</li>
+<li>[ ] بین واژه‌ها فاصله اضافی نیست.</li>
+<li>[ ] تراز و فاصله خطوط مناسب است.</li>
+<li>[ ] صفحه دوم با Page Break ساخته شده است.</li>
+<li>[ ] فهرست‌ها با Bullets یا Numbering ساخته شده‌اند.</li>
+<li>[ ] تصویرها متناسب و داخل محدوده صفحه‌اند.</li>
+<li>[ ] تصویرها کشیده یا فشرده نشده‌اند.</li>
+<li>[ ] شرح تصاویر خوانا و هماهنگ است.</li>
+<li>[ ] جدول از صفحه بیرون نرفته است.</li>
+<li>[ ] Borders لازم در جدول فعال است.</li>
+<li>[ ] Header، Footer و Page Number درست‌اند.</li>
+<li>[ ] صفحه خالی ناخواسته وجود ندارد.</li>
+<li>[ ] Print Preview بررسی شده است.</li>
+<li>[ ] PDF با آخرین DOCX هماهنگ است.</li>
+<li>[ ] هر دو فایل تحویل داده شده‌اند.</li>
+</ul>
+<hr />
+<h1>روبریک ارزشیابی پروژه</h1>
+<table>
+<thead>
+<tr>
+<th>معیار</th>
+<th>۴ ـ فراتر از انتظار</th>
+<th>۳ ـ مطابق انتظار</th>
+<th>۲ ـ در حال یادگیری</th>
+<th>۱ ـ نیازمند آموزش</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>مدیریت فایل</td>
+<td>نام‌گذاری، پوشه‌بندی، DOCX و PDF کاملاً منظم</td>
+<td>فایل‌ها درست و قابل شناسایی</td>
+<td>یک فایل یا بخشی از پوشه ناقص</td>
+<td>فایل گم یا تحویل‌نشده</td>
+</tr>
+<tr>
+<td>تایپ و ویرایش</td>
+<td>دقیق، روان و دارای نیم‌فاصله درست</td>
+<td>چند خطای جزئی</td>
+<td>خطاهای تکراری دارد</td>
+<td>خطاها خواندن را دشوار کرده</td>
+</tr>
+<tr>
+<td>قالب متن و بند</td>
+<td>سلسله‌مراتب کاملاً هماهنگ و خوانا</td>
+<td>بیشتر قالب‌ها درست</td>
+<td>ناهماهنگی مشخص دارد</td>
+<td>شلوغ یا نامنظم است</td>
+</tr>
+<tr>
+<td>تصویر، فهرست و جدول</td>
+<td>همه عناصر دقیق و هدفمند</td>
+<td>عناصر اصلی درست‌اند</td>
+<td>بعضی عناصر ناقص‌اند</td>
+<td>عناصر اصلی وجود ندارند</td>
+</tr>
+<tr>
+<td>صفحه‌آرایی</td>
+<td>متعادل، بدون بریدگی و شماره‌گذاری درست</td>
+<td>تقریباً بدون خطاست</td>
+<td>شکست صفحه یا حاشیه مشکل دارد</td>
+<td>ساختار صفحات نامناسب است</td>
+</tr>
+<tr>
+<td>بازبینی</td>
+<td>جزئیات دقیق و خطاها اصلاح شده‌اند</td>
+<td>ظاهر کلی مشابه نمونه</td>
+<td>فقط بخش‌هایی مشابه است</td>
+<td>پروژه ناقص است</td>
+</tr>
+</tbody>
+</table>
+<p><strong>امتیاز کل:</strong> ۲۴<br />
+۲۱ تا ۲۴: تسلط بسیار خوب | ۱۷ تا ۲۰: تسلط مورد انتظار | ۱۲ تا ۱۶: تمرین بیشتر | ۶ تا ۱۱: آموزش دوباره</p>
+<hr />
+<h1>خودارزیابی دانش‌آموز</h1>
+<p>برای هر عبارت یکی از گزینه‌های «می‌توانم»، «با کمک می‌توانم» یا «باید تمرین کنم» را انتخاب کنید.</p>
+<table>
+<thead>
+<tr>
+<th>مهارت</th>
+<th style="text-align: center;">می‌توانم</th>
+<th style="text-align: center;">با کمک</th>
+<th style="text-align: center;">باید تمرین کنم</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ساخت، ذخیره و بازکردن فایل</td>
+<td style="text-align: center;">□</td>
+<td style="text-align: center;">□</td>
+<td style="text-align: center;">□</td>
+</tr>
+<tr>
+<td>نام‌گذاری و پوشه‌بندی</td>
+<td style="text-align: center;">□</td>
+<td style="text-align: center;">□</td>
+<td style="text-align: center;">□</td>
+</tr>
+<tr>
+<td>تایپ فارسی و انگلیسی</td>
+<td style="text-align: center;">□</td>
+<td style="text-align: center;">□</td>
+<td style="text-align: center;">□</td>
+</tr>
+<tr>
+<td>نیم‌فاصله و نشانه‌گذاری</td>
+<td style="text-align: center;">□</td>
+<td style="text-align: center;">□</td>
+<td style="text-align: center;">□</td>
+</tr>
+<tr>
+<td>انتخاب، کپی و جابه‌جایی متن</td>
+<td style="text-align: center;">□</td>
+<td style="text-align: center;">□</td>
+<td style="text-align: center;">□</td>
+</tr>
+<tr>
+<td>قالب‌بندی هماهنگ</td>
+<td style="text-align: center;">□</td>
+<td style="text-align: center;">□</td>
+<td style="text-align: center;">□</td>
+</tr>
+<tr>
+<td>تنظیم پاراگراف و فهرست</td>
+<td style="text-align: center;">□</td>
+<td style="text-align: center;">□</td>
+<td style="text-align: center;">□</td>
+</tr>
+<tr>
+<td>درج و تنظیم تصویر</td>
+<td style="text-align: center;">□</td>
+<td style="text-align: center;">□</td>
+<td style="text-align: center;">□</td>
+</tr>
+<tr>
+<td>ساخت جدول</td>
+<td style="text-align: center;">□</td>
+<td style="text-align: center;">□</td>
+<td style="text-align: center;">□</td>
+</tr>
+<tr>
+<td>صفحه‌آرایی و شماره صفحه</td>
+<td style="text-align: center;">□</td>
+<td style="text-align: center;">□</td>
+<td style="text-align: center;">□</td>
+</tr>
+<tr>
+<td>Print Preview و PDF</td>
+<td style="text-align: center;">□</td>
+<td style="text-align: center;">□</td>
+<td style="text-align: center;">□</td>
+</tr>
+</tbody>
+</table>
+<h2>بازتاب کوتاه</h2>
+<ul>
+<li>بهترین بخش پروژه من:</li>
+<li>دشوارترین بخش:</li>
+<li>خطایی که پیدا و اصلاح کردم:</li>
+<li>مهارتی که باید بیشتر تمرین کنم:</li>
+<li>اگر دوباره پروژه را بسازم، چه چیزی را تغییر می‌دهم؟</li>
+</ul>
+<hr />
+<h1>آزمون عملکردی</h1>
+<h2>موقعیت</h2>
+<p>مدرس فایل خامی شامل متن، تصویر و اطلاعات یک جدول در اختیار شما می‌گذارد. آن را به یک سند دوصفحه‌ای منظم تبدیل کنید.</p>
+<h2>وظایف و امتیاز</h2>
+<table>
+<thead>
+<tr>
+<th>وظیفه</th>
+<th style="text-align: right;">امتیاز</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ذخیره با نام استاندارد</td>
+<td style="text-align: right;">۲</td>
+</tr>
+<tr>
+<td>قالب‌بندی عنوان اصلی و دو عنوان فرعی</td>
+<td style="text-align: right;">۲</td>
+</tr>
+<tr>
+<td>اصلاح جهت، نیم‌فاصله و سه خطای نگارشی</td>
+<td style="text-align: right;">۳</td>
+</tr>
+<tr>
+<td>تنظیم بند و فاصله خطوط</td>
+<td style="text-align: right;">۲</td>
+</tr>
+<tr>
+<td>ساخت فهرست شماره‌دار</td>
+<td style="text-align: right;">۲</td>
+</tr>
+<tr>
+<td>درج و تنظیم تصویر و شرح</td>
+<td style="text-align: right;">۲</td>
+</tr>
+<tr>
+<td>ساخت و قالب‌بندی جدول</td>
+<td style="text-align: right;">۲</td>
+</tr>
+<tr>
+<td>ایجاد صفحه دوم با Page Break</td>
+<td style="text-align: right;">۱</td>
+</tr>
+<tr>
+<td>درج Header و Page Number</td>
+<td style="text-align: right;">۱</td>
+</tr>
+<tr>
+<td>کنترل و ساخت PDF</td>
+<td style="text-align: right;">۲</td>
+</tr>
+<tr>
+<td>تحویل DOCX و PDF</td>
+<td style="text-align: right;">۱</td>
+</tr>
+<tr>
+<td><strong>جمع</strong></td>
+<td style="text-align: right;"><strong>۲۰</strong></td>
+</tr>
+</tbody>
+</table>
+<h2>قواعد</h2>
+<ul>
+<li>راهنمای کوتاه میان‌برها مجاز است.</li>
+<li>دریافت فایل آماده از دانش‌آموز دیگر مجاز نیست.</li>
+<li>پرسش درباره محل فرمان مجاز است، اما مدرس کار را به‌جای دانش‌آموز انجام نمی‌دهد.</li>
+<li>کیفیت و درستی مهم‌تر از شباهت کامل به نمونه است.</li>
+</ul>
+<hr />
+<h1>راهنمای کوتاه مدرس</h1>
+<h2>الگوی اجرای هر واحد</h2>
+<ol start="۱">
+<li>نمایش محصول نهایی  </li>
+<li>آموزش کوتاه فرمان‌ها  </li>
+<li>تمرین هدایت‌شده هم‌زمان  </li>
+<li>چالش انتخابی  </li>
+<li>ذخیره شاهد پوشه کار و پرسش خروج</li>
+</ol>
+<h2>اصول تدریس</h2>
+<ul>
+<li>ابتدا محصول را نشان دهید و سپس فرمان‌ها را آموزش دهید.</li>
+<li>هر توضیح مدرس باید به یک اقدام دانش‌آموز وصل شود.</li>
+<li>آموزش مستقیم پیوسته را کوتاه نگه دارید.</li>
+<li>دانش‌آموز سریع‌تر می‌تواند راهنما باشد، اما نباید ماوس دوستش را در دست بگیرد.</li>
+<li>از فایل خام مشترک استفاده کنید تا زمان کلاس صرف تایپ طولانی نشود.</li>
+<li>نام‌گذاری و ذخیره فایل در همه درس‌ها ارزیابی شود.</li>
+<li>بازخورد دقیق بدهید: «تصویر از حاشیه بیرون رفته؛ عرض را کم و Print Preview را دوباره بررسی کن.»</li>
+</ul>
+<h2>تفاوت‌های نسخه</h2>
+<ul>
+<li>فرمان‌های اصلی Word 2021 و Microsoft 365 تقریباً یکسان‌اند.</li>
+<li>ظاهر صفحه آغاز یا محل گزینه‌های فرعی ممکن است متفاوت باشد.</li>
+<li>در رابط فارسی، ترجمه فرمان‌ها ممکن است کمی تفاوت داشته باشد؛ نام انگلیسی معیار جست‌وجو است.</li>
+<li>AutoSave معمولاً برای فایل OneDrive فعال است؛ برای فایل محلی همچنان <code>Ctrl+S</code> لازم است.</li>
+</ul>
+<h2>ایمنی و اخلاق</h2>
+<ul>
+<li>اطلاعات شخصی در تمرین‌ها نوشته نشود.</li>
+<li>منبع و مجوز تصویر رعایت شود.</li>
+<li>پیش از چاپ، چاپگر، تعداد نسخه و محدوده صفحات کنترل شود.</li>
+<li>علاوه بر PDF، فایل قابل‌ویرایش DOCX نگهداری شود.</li>
+</ul>
+<hr />
+<h1>برگه میان‌برهای ضروری</h1>
+<table>
+<thead>
+<tr>
+<th>عمل</th>
+<th>میان‌بر</th>
+<th>عمل</th>
+<th>میان‌بر</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>سند جدید</td>
+<td><code>Ctrl+N</code></td>
+<td>بازکردن</td>
+<td><code>Ctrl+O</code></td>
+</tr>
+<tr>
+<td>ذخیره</td>
+<td><code>Ctrl+S</code></td>
+<td>چاپ</td>
+<td><code>Ctrl+P</code></td>
+</tr>
+<tr>
+<td>انتخاب همه</td>
+<td><code>Ctrl+A</code></td>
+<td>جست‌وجو</td>
+<td><code>Ctrl+F</code></td>
+</tr>
+<tr>
+<td>جایگزینی</td>
+<td><code>Ctrl+H</code></td>
+<td>کپی</td>
+<td><code>Ctrl+C</code></td>
+</tr>
+<tr>
+<td>برش</td>
+<td><code>Ctrl+X</code></td>
+<td>چسباندن</td>
+<td><code>Ctrl+V</code></td>
+</tr>
+<tr>
+<td>بازگردانی</td>
+<td><code>Ctrl+Z</code></td>
+<td>انجام دوباره</td>
+<td><code>Ctrl+Y</code></td>
+</tr>
+<tr>
+<td>ضخیم</td>
+<td><code>Ctrl+B</code></td>
+<td>زیرخط</td>
+<td><code>Ctrl+U</code></td>
+</tr>
+<tr>
+<td>صفحه تازه</td>
+<td><code>Ctrl+Enter</code></td>
+<td>نمایش نشانه‌ها</td>
+<td><code>Ctrl+Shift+8</code></td>
+</tr>
+<tr>
+<td>تغییر زبان</td>
+<td><code>Windows+Space</code></td>
+<td>نمایش Ribbon</td>
+<td><code>Ctrl+F1</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>فایل‌های همراه</h1>
+<ul>
+<li>فایل تمرین خام برای آزمون عملکردی</li>
+<li>نمونه پاسخ پروژه دوصفحه‌ای</li>
+<li>نسخه PDF نمونه پاسخ</li>
+<li>تصاویر شماتیک شماره‌گذاری‌شده</li>
+<li>فرم خودارزیابی و روبریک داخل همین جزوه</li>
+</ul>
+<p>این نسخه برای اجرای آزمایشی Word پایه هفتم تهیه شده است. بازخورد دانش‌آموزان و مدرس، مبنای ویرایش بعدی و تولید جلدهای پایه هشتم و نهم خواهد بود.</p></body></html>

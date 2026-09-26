@@ -54,6 +54,15 @@ def fnt(size: int, bold: bool = False):
     return base.font(base.FONT_BOLD if bold else base.FONT_REGULAR, size)
 
 
+def latin_fnt(size: int, bold: bool = False):
+    path = Path("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf" if bold else "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf")
+    return base.font(path, size)
+
+
+def latin_text(draw, xy, value: str, size: int, color=DARK, bold=False, anchor="mm"):
+    draw.text(xy, value, font=latin_fnt(size, bold), fill=color, anchor=anchor)
+
+
 def text(draw, xy, value: str, size: int, color=DARK, bold=False, anchor="mm"):
     base.rtl_text(draw, xy, value, fnt=fnt(size, bold), fill=color, anchor=anchor)
 
@@ -86,14 +95,14 @@ def create_visuals() -> None:
     card(draw, (250, 110, 1350, 790), SKY, BLUE, 8, 34)
     draw.rectangle((390, 215, 1210, 680), fill="white", outline=BLUE, width=7)
     draw.rectangle((390, 215, 1210, 285), fill=BLUE)
-    for x, label in ((460, "File"), (600, "Home"), (750, "Insert"), (915, "Layout")):
-        draw.text((x, 250), label, font=fnt(29, True), fill="white", anchor="mm")
+    for x, label in ((460, "فایل"), (600, "خانه"), (750, "درج"), (930, "طرح‌بندی")):
+        text(draw, (x, 250), label, 27, "white", True)
     draw.rectangle((500, 350, 1100, 610), fill="#F8FAFC", outline="#CBD5E1", width=4)
     text(draw, (800, 410), "اولین سند حرفه‌ای من", 48, VIOLET, True)
     draw.line((580, 480, 1020, 480), fill="#94A3B8", width=8)
     draw.line((620, 535, 980, 535), fill="#CBD5E1", width=8)
     draw.line((680, 590, 920, 590), fill="#CBD5E1", width=8)
-    text(draw, (800, 735), "تایپ • تصویر • جدول • صفحه‌آرایی", 34, DARK)
+    text(draw, (800, 735), "تایپ / تصویر / جدول / صفحه‌آرایی", 34, DARK)
     save_visual(image, "00-cover-illustration.png")
 
     # 1. Interface
@@ -109,11 +118,11 @@ def create_visuals() -> None:
     labels = [
         (1, 1270, 202, "نوار عنوان"),
         (2, 1300, 270, "زبانه‌ها"),
-        (3, 1290, 360, "Ribbon"),
+        (3, 1290, 360, "نوار ابزار"),
         (4, 240, 430, "خط‌کش"),
         (5, 800, 590, "صفحه سند"),
         (6, 250, 767, "نوار وضعیت"),
-        (7, 1340, 767, "Zoom"),
+        (7, 1340, 767, "بزرگ‌نمایی"),
     ]
     for number, x, y, label in labels:
         number_badge(draw, x, y, number)
@@ -124,7 +133,7 @@ def create_visuals() -> None:
     image = Image.new("RGB", (1600, 900), "white")
     draw = ImageDraw.Draw(image)
     visual_title(draw, "مسیر ذخیره نخستین سند")
-    steps = ["سند تازه", "Save As", "انتخاب پوشه", "نام فایل", "Save"]
+    steps = ["سند تازه", "ذخیره با نام", "انتخاب پوشه", "نام فایل", "ذخیره"]
     colors = [BLUE, VIOLET, TEAL, ORANGE, GREEN]
     centers = [1350, 1075, 800, 525, 250]
     for index, (label, color, cx) in enumerate(zip(steps, colors, centers), 1):
@@ -134,7 +143,8 @@ def create_visuals() -> None:
         if index < len(steps):
             draw.line((cx - 110, 445, cx - 160, 445), fill="#94A3B8", width=9)
             draw.polygon([(cx - 180, 445), (cx - 150, 425), (cx - 150, 465)], fill="#94A3B8")
-    text(draw, (800, 700), "میان‌بر ذخیره: Ctrl + S", 38, DARK, True)
+    text(draw, (930, 700), "میان‌بر ذخیره:", 38, DARK, True)
+    latin_text(draw, (570, 700), "Ctrl + S", 38, DARK, True)
     save_visual(image, "02-save-workflow.png")
 
     # 3. Persian typing
@@ -155,7 +165,7 @@ def create_visuals() -> None:
         card(draw, (cx - 160, cy - 85, cx + 160, cy + 85), SKY, BLUE, 3)
         draw.text((cx + 120, cy - 35), num, font=fnt(34, True), fill=BLUE, anchor="mm")
         text(draw, (cx, cy - 25), title, 31, DARK, True)
-        draw.text((cx, cy + 38), subtitle, font=fnt(24), fill=GRAY, anchor="mm")
+        latin_text(draw, (cx, cy + 38), subtitle, 24, GRAY)
     text(draw, (800, 790), "دانش‌آموزان می‌توانند درست و خوانا تایپ کنند.", 36, VIOLET, True)
     save_visual(image, "03-persian-typing.png")
 
@@ -168,8 +178,8 @@ def create_visuals() -> None:
     for index, ((name, shortcut), (cx, cy)) in enumerate(zip(tools, positions), 1):
         card(draw, (cx - 180, cy - 100, cx + 180, cy + 100), LIGHT, [BLUE, VIOLET, TEAL, ORANGE, GREEN, RED][index - 1], 5)
         number_badge(draw, cx + 140, cy - 60, index, [BLUE, VIOLET, TEAL, ORANGE, GREEN, RED][index - 1])
-        draw.text((cx, cy - 20), name, font=fnt(42, True), fill=DARK, anchor="mm")
-        draw.text((cx, cy + 48), shortcut, font=fnt(30), fill=GRAY, anchor="mm")
+        latin_text(draw, (cx, cy - 20), name, 42, DARK, True)
+        latin_text(draw, (cx, cy + 48), shortcut, 30, GRAY)
     save_visual(image, "04-editing-tools.png")
 
     # 5. Formatting
@@ -189,7 +199,7 @@ def create_visuals() -> None:
         x = 1320 - (index % 3) * 170
         y = 570 + (index // 3) * 85
         number_badge(draw, x, y, int(num), BLUE)
-        draw.text((x - 75, y), label, font=fnt(22), fill=DARK, anchor="mm")
+        latin_text(draw, (x - 75, y), label, 22, DARK)
     save_visual(image, "05-text-formatting.png")
 
     # 6. Paragraph
@@ -217,7 +227,7 @@ def create_visuals() -> None:
     text(draw, (800, 470), "تصویر آموزشی", 44, BLUE, True)
     for x, y in ((560, 320), (1040, 320), (560, 620), (1040, 620)):
         draw.rectangle((x - 12, y - 12, x + 12, y + 12), fill="white", outline=BLUE, width=4)
-    labels = [(1, 1210, 245, "Insert Picture"), (2, 1110, 660, "دستگیره گوشه"), (3, 800, 700, "حفظ تناسب"), (4, 430, 470, "Wrap Text"), (5, 800, 790, "شرح تصویر")]
+    labels = [(1, 1210, 245, "درج تصویر"), (2, 1110, 660, "دستگیره گوشه"), (3, 800, 700, "حفظ تناسب"), (4, 430, 470, "چیدمان متن"), (5, 800, 790, "شرح تصویر")]
     for number, x, y, label in labels:
         number_badge(draw, x, y, number, VIOLET)
         text(draw, (x, y + 55 if y < 750 else y), label, 24, DARK)
@@ -256,7 +266,7 @@ def create_visuals() -> None:
     draw.rectangle((550, 230, 1050, 720), outline="#94A3B8", width=3)
     draw.rectangle((550, 230, 1050, 290), fill=SKY)
     draw.rectangle((550, 660, 1050, 720), fill="#F1F5F9")
-    labels = [(1, 1260, 200, "A4"), (2, 1260, 380, "Portrait"), (3, 1260, 590, "Margins"), (4, 380, 250, "Header"), (5, 380, 675, "Footer"), (6, 800, 755, "Page Number")]
+    labels = [(1, 1260, 200, "A4"), (2, 1260, 380, "صفحه عمودی"), (3, 1260, 590, "حاشیه"), (4, 380, 250, "سربرگ"), (5, 380, 675, "پابرگ"), (6, 800, 755, "شماره صفحه")]
     for number, x, y, label in labels:
         number_badge(draw, x, y, number, ORANGE)
         text(draw, (x, y + 55), label, 24)
@@ -277,7 +287,7 @@ def create_visuals() -> None:
         cx = 1360 - index * 280
         card(draw, (cx - 120, 280, cx + 120, 620), LIGHT, [BLUE, VIOLET, TEAL, ORANGE, GREEN][index], 5)
         number_badge(draw, cx, 345, int(num), [BLUE, VIOLET, TEAL, ORANGE, GREEN][index])
-        draw.text((cx, 455), title, font=fnt(31, True), fill=DARK, anchor="mm")
+        latin_text(draw, (cx, 455), title, 31, DARK, True)
         text(draw, (cx, 540), subtitle, 23, GRAY)
         if index < len(steps) - 1:
             draw.line((cx - 125, 450, cx - 155, 450), fill="#94A3B8", width=8)

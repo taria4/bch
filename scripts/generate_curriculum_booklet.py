@@ -75,7 +75,7 @@ def create_infographics() -> None:
         rtl_text(draw, (cx, 265), grade, fnt=bold, fill=color)
         rtl_text(draw, (cx, 360), slogan, fnt=font(FONT_BOLD, 60), fill=DARK)
         for index, line in enumerate(lines):
-            rtl_text(draw, (cx, 475 + index * 72), f"• {line}", fnt=regular, fill=DARK)
+            rtl_text(draw, (cx, 475 + index * 72), f"— {line}", fnt=regular, fill=DARK)
     rtl_text(draw, (800, 820), "از اجرای گام‌به‌گام تا تولید محصول مستقل", fnt=regular, fill=DARK)
     image.save(ASSETS / "infographic-three-grade-path.png", dpi=(180, 180))
 

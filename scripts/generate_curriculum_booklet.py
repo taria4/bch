@@ -176,7 +176,9 @@ def build_html() -> Path:
       border-right: 4px solid {ORANGE}; background: #FFF7ED; margin: 5mm 0;
       padding: 4mm 5mm; border-radius: 2mm; break-inside: avoid;
     }}
-    table {{ width: 100%; border-collapse: collapse; margin: 5mm 0; font-size: 9.2pt; break-inside: avoid; }}
+    table {{ width: 100%; border-collapse: collapse; margin: 5mm 0; font-size: 9.2pt; }}
+    thead {{ display: table-header-group; }}
+    tr {{ break-inside: avoid; }}
     th {{ background: {BLUE}; color: white; font-weight: 700; }}
     th, td {{ border: 1px solid #CBD5E1; padding: 2.2mm; text-align: right; vertical-align: top; }}
     tr:nth-child(even) td {{ background: #F8FAFC; }}
